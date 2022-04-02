@@ -1,0 +1,7 @@
+{
+    "username":"tester",
+    "pw": 1234,
+    "SIP":"127.0.0.1",
+    "SName":"test.org",
+    "isAuth":true
+}

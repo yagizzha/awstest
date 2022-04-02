@@ -1,0 +1,32 @@
+GET http://localhost:3000/subscribers
+###
+
+GET http://localhost:3000/subscribers/61ec680a1ebafcdc21b6bcbb
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "HWID":"00000000-0000-0000-0000-4CCC6AF43DAE",
+    "custType":"Perma"
+}
+###
+
+
+
+DELETE http://localhost:3000/subscribers/61ec6de542ecd15a8064e5c9
+###
+
+
+
+PATCH http://localhost:3000/subscribers/0000-002130-ADFHA
+
+###
+
+POST http://localhost:3000/subscribers/test
+Content-Type: application/json
+
+{
+    "HWID":"0000-002130-ADFHA"
+}
