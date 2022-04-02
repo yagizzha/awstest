@@ -14,4 +14,4 @@ app.use(express.json())
 
 app.use('/subscribers',Routertest)
 
-app.listen(3002,()=>console.log('Server Started'))
+app.listen(2999,()=>console.log('Server Started'))
