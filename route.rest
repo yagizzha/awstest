@@ -24,7 +24,15 @@ PATCH http://localhost:3000/subscribers/0000-002130-ADFHA
 
 ###
 
-POST http://localhost:3000/subscribers/test
+POST http://ec2-18-220-112-181.us-east-2.compute.amazonaws.com:2999/subscribers/test
+Content-Type: application/json
+
+{
+    "HWID":"0000-002130-ADFHA"
+}
+###
+
+POST http://localhost:2999/subscribers/id
 Content-Type: application/json
 
 {

@@ -58,6 +58,15 @@ router.post('/test',async(req,res)=>{
     }
 })
 
+router.post('/id',async(req,res)=>{
+    try{
+        var Answer=false;
+        const subscribers=await Subscriber.find({HWID :{$regex: `${req.body.HWID}`}})
+        res.json(subscribers)
+    }catch(err){
+        res.status(500).json({message: err.message})
+    }
+})
 //update
 router.patch('/:id',getSubscriberHWID,async (req,res)=>{
     console.log(res.subscriber);
