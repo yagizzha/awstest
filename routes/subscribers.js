@@ -51,6 +51,10 @@ router.post('/test',async(req,res)=>{
             {
                 Answer=true
             }
+            if (Difference_In_Days>1 && str.localeCompare("Trial")===0)
+            {
+                Answer=false
+            }
             res.json(Answer)
         }
     }catch(err){

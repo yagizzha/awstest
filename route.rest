@@ -38,3 +38,13 @@ Content-Type: application/json
 {
     "HWID":"0000-002130-ADFHA"
 }
+###
+
+
+
+POST http://localhost:2999/subscribers/test
+Content-Type: application/json
+
+{
+    "HWID":"0000-002130-ADFHA"
+}
