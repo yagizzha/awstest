@@ -41,6 +41,7 @@ router.post('/test',async(req,res)=>{
         var Answer=false;
         const subscribers=await Subscriber.find({HWID :{$regex: `${req.body.HWID}`}})
         if (subscribers.length===0){
+            Answer=true
             res.json(Answer)
         }
         else{
